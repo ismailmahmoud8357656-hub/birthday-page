@@ -1,0 +1,3215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  >
+
+  <title>Happy Birthday ME700000 ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    /* =========================================================
+       ROOT
+    ========================================================= */
+
+    :root {
+      --pink-deep: #b91f5b;
+      --pink-dark: #9f164c;
+      --pink: #e74682;
+      --pink-mid: #f36f9d;
+      --pink-light: #ff9fbe;
+      --pink-soft: #ffd7e5;
+
+      --blue: #8bd8f5;
+      --blue-light: #dff7ff;
+
+      --cream: #fffafd;
+      --white: #ffffff;
+
+      --ink: #45172c;
+      --muted: #7c5265;
+
+      --glass: rgba(255, 255, 255, .14);
+      --glass-strong: rgba(255, 255, 255, .22);
+
+      --shadow:
+        0 30px 80px rgba(78, 9, 39, .22);
+
+      --soft-shadow:
+        0 18px 45px rgba(90, 11, 47, .18);
+    }
+
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: #c82e69;
+    }
+
+    body {
+      min-height: 100vh;
+
+      overflow-x: hidden;
+
+      color: var(--ink);
+
+      font-family: "Cairo", "Inter", sans-serif;
+
+      background:
+        radial-gradient(
+          circle at 10% 5%,
+          rgba(255,255,255,.42),
+          transparent 24%
+        ),
+        radial-gradient(
+          circle at 92% 14%,
+          rgba(139,216,245,.42),
+          transparent 25%
+        ),
+        radial-gradient(
+          circle at 50% 55%,
+          rgba(255,255,255,.12),
+          transparent 35%
+        ),
+        linear-gradient(
+          145deg,
+          #b91f5b 0%,
+          #df427c 22%,
+          #ef709c 44%,
+          #ffaac6 67%,
+          #dff7ff 100%
+        );
+
+      background-attachment: fixed;
+    }
+
+    body::before {
+      content: "";
+
+      position: fixed;
+      inset: 0;
+
+      pointer-events: none;
+
+      z-index: 9998;
+
+      background:
+        radial-gradient(
+          circle at 50% -10%,
+          rgba(255,255,255,.25),
+          transparent 32%
+        );
+
+      mix-blend-mode: screen;
+    }
+
+    body::after {
+      content: "";
+
+      position: fixed;
+      inset: 0;
+
+      pointer-events: none;
+
+      z-index: 9997;
+
+      opacity: .035;
+
+      background-image:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+    }
+
+    button {
+      font: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+
+    /* =========================================================
+       INTRO
+    ========================================================= */
+
+    .intro {
+      position: fixed;
+      inset: 0;
+
+      z-index: 10000;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      overflow: hidden;
+
+      background:
+        radial-gradient(
+          circle at 50% 42%,
+          rgba(255,255,255,.38),
+          transparent 19%
+        ),
+        radial-gradient(
+          circle at 50% 50%,
+          #f79aba,
+          #df4c83 52%,
+          #a9134e 100%
+        );
+
+      transition:
+        opacity 1s ease,
+        visibility 1s ease;
+    }
+
+    .intro.hide {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .intro-glow {
+      position: absolute;
+
+      width: 70vw;
+      height: 70vw;
+
+      max-width: 520px;
+      max-height: 520px;
+
+      border-radius: 50%;
+
+      border: 1px solid rgba(255,255,255,.18);
+
+      box-shadow:
+        0 0 100px rgba(255,255,255,.15),
+        inset 0 0 100px rgba(255,255,255,.08);
+    }
+
+    .intro-content {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+
+      z-index: 2;
+    }
+
+    .rocket {
+      font-size: 72px;
+
+      filter:
+        drop-shadow(0 20px 25px rgba(72, 5, 34, .35))
+        drop-shadow(0 0 20px rgba(255,255,255,.4));
+
+      transform: translateY(40px);
+
+      animation:
+        rocketLaunch 1.8s cubic-bezier(.2,.8,.2,1) forwards;
+    }
+
+    .flame {
+      position: absolute;
+
+      bottom: -42px;
+
+      width: 28px;
+      height: 65px;
+
+      border-radius: 50%;
+
+      background:
+        linear-gradient(
+          180deg,
+          #fff4bc,
+          #ffd166 35%,
+          #ff6b91 70%,
+          transparent
+        );
+
+      filter:
+        blur(1px)
+        drop-shadow(0 0 14px #ffca76);
+
+      animation: flamePulse .16s infinite alternate;
+    }
+
+    .intro-caption {
+      margin-top: 55px;
+
+      color: rgba(255,255,255,.92);
+
+      font-size: 9px;
+      font-weight: 700;
+
+      letter-spacing: 5px;
+
+      text-transform: uppercase;
+
+      opacity: 0;
+
+      animation: captionIn .8s ease 2s forwards;
+    }
+
+    @keyframes rocketLaunch {
+      0% {
+        transform:
+          translateY(80px)
+          scale(.8);
+        opacity: 0;
+      }
+
+      30% {
+        opacity: 1;
+      }
+
+      100% {
+        transform:
+          translateY(-100px)
+          scale(1.05);
+        opacity: 1;
+      }
+    }
+
+    @keyframes flamePulse {
+      from {
+        transform: scaleY(.85);
+      }
+
+      to {
+        transform: scaleY(1.15);
+      }
+    }
+
+    @keyframes captionIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+    /* =========================================================
+       GENERAL SECTIONS
+    ========================================================= */
+
+    section {
+      position: relative;
+
+      width: 100%;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+
+      margin-bottom: 20px;
+
+      color: rgba(255,255,255,.82);
+
+      font-size: 9px;
+      font-weight: 800;
+
+      letter-spacing: 4px;
+
+      text-transform: uppercase;
+    }
+
+    .section-label::before,
+    .section-label::after {
+      content: "";
+
+      width: 22px;
+      height: 1px;
+
+      background: rgba(255,255,255,.45);
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      min-height: 100svh;
+
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 50px 24px;
+
+      text-align: center;
+
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 480px;
+      height: 480px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(255,255,255,.17),
+          transparent 68%
+        );
+
+      filter: blur(8px);
+
+      animation: heroGlow 5s ease-in-out infinite alternate;
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 250px;
+      height: 250px;
+
+      bottom: 8%;
+      right: -120px;
+
+      border-radius: 50%;
+
+      background: rgba(139,216,245,.24);
+
+      filter: blur(35px);
+    }
+
+    @keyframes heroGlow {
+      from {
+        transform: scale(.9);
+        opacity: .55;
+      }
+
+      to {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+    }
+
+    .eyebrow {
+      position: relative;
+      z-index: 2;
+
+      margin-bottom: 16px;
+
+      color: rgba(255,255,255,.82);
+
+      font-size: 9px;
+      font-weight: 800;
+
+      letter-spacing: 5px;
+    }
+
+    .hero h1 {
+      position: relative;
+      z-index: 2;
+
+      color: #fff;
+
+      font-family: "DM Serif Display", serif;
+
+      font-size: clamp(55px, 16vw, 105px);
+
+      line-height: .9;
+
+      letter-spacing: -2px;
+
+      text-shadow:
+        0 4px 0 rgba(255,255,255,.12),
+        0 18px 50px rgba(76, 6, 38, .32);
+    }
+
+    .hero .name {
+      position: relative;
+      z-index: 2;
+
+      margin-top: 16px;
+
+      color: #fff;
+
+      font-family: "DM Serif Display", serif;
+
+      font-size: clamp(45px, 14vw, 85px);
+
+      line-height: .95;
+
+      text-shadow:
+        0 8px 30px rgba(80, 7, 41, .32);
+    }
+
+    .hero p {
+      position: relative;
+      z-index: 2;
+
+      margin-top: 30px;
+
+      padding: 10px 20px;
+
+      color: rgba(255,255,255,.9);
+
+      font-size: 12px;
+
+      border:
+        1px solid rgba(255,255,255,.2);
+
+      border-radius: 999px;
+
+      background:
+        rgba(255,255,255,.08);
+
+      backdrop-filter: blur(16px);
+
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.25),
+        0 15px 35px rgba(89, 10, 47, .12);
+    }
+
+    .scroll-hint {
+      position: absolute;
+
+      bottom: 35px;
+
+      color: rgba(255,255,255,.75);
+
+      font-size: 8px;
+      font-weight: 700;
+
+      letter-spacing: 4px;
+
+      animation: scrollHint 2s ease-in-out infinite;
+    }
+
+    @keyframes scrollHint {
+      0%,100% {
+        transform: translateY(0);
+        opacity: .55;
+      }
+
+      50% {
+        transform: translateY(8px);
+        opacity: 1;
+      }
+    }
+
+
+    /* =========================================================
+       CHAPTER
+    ========================================================= */
+
+    .chapter {
+      min-height: 100svh;
+
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 70px 24px;
+
+      text-align: center;
+
+      overflow: hidden;
+    }
+
+    .big-number {
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      color: rgba(255,255,255,.13);
+
+      font-family: "DM Serif Display", serif;
+
+      font-size: clamp(210px, 58vw, 380px);
+
+      line-height: 1;
+
+      user-select: none;
+
+      text-shadow:
+        0 30px 80px rgba(74, 6, 37, .18);
+    }
+
+    .chapter h2 {
+      position: relative;
+      z-index: 2;
+
+      max-width: 700px;
+
+      color: #fff;
+
+      font-family: "DM Serif Display", serif;
+
+      font-size: clamp(32px, 8vw, 65px);
+
+      line-height: 1.1;
+
+      text-shadow:
+        0 14px 40px rgba(79, 7, 41, .25);
+    }
+
+    .chapter p {
+      position: relative;
+      z-index: 2;
+
+      max-width: 430px;
+
+      margin-top: 22px;
+
+      color: rgba(255,255,255,.84);
+
+      font-size: 13px;
+      line-height: 2;
+    }
+
+
+    /* =========================================================
+       MEMORIES
+    ========================================================= */
+
+    .memories {
+      min-height: 100svh;
+
+      padding:
+        90px 20px
+        100px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      background:
+        radial-gradient(
+          circle at 15% 15%,
+          rgba(255,255,255,.18),
+          transparent 27%
+        ),
+        radial-gradient(
+          circle at 85% 72%,
+          rgba(139,216,245,.24),
+          transparent 27%
+        );
+    }
+
+    .memories-head {
+      width: 100%;
+      max-width: 650px;
+
+      text-align: center;
+    }
+
+    .memories-head h2 {
+      color: #fff;
+
+      font-family: "DM Serif Display", serif;
+
+      font-size: clamp(38px, 9vw, 68px);
+
+      line-height: 1;
+
+      text-shadow:
+        0 14px 35px rgba(76, 6, 38, .26);
+    }
+
+    .memories-head p {
+      margin-top: 18px;
+
+      color: rgba(255,255,255,.82);
+
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+
+    /* =========================================================
+       MEMORY STAGE
+    ========================================================= */
+
+    .memory-stage {
+      position: relative;
+
+      width: min(88vw, 390px);
+      height: min(112vw, 490px);
+
+      margin-top: 45px;
+
+      perspective: 1400px;
+    }
+
+    .memory-stage::before {
+      content: "";
+
+      position: absolute;
+
+      inset: -35px -25px;
+
+      border-radius: 50px;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(255,255,255,.24),
+          transparent 68%
+        );
+
+      filter: blur(28px);
+
+      pointer-events: none;
+    }
+
+    .memory-card {
+      position: absolute;
+
+      inset: 0;
+
+      padding: 11px;
+
+      border-radius: 25px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff 0%,
+          #fffafd 55%,
+          #f9dce8 100%
+        );
+
+      box-shadow:
+        0 35px 75px rgba(70, 7, 37, .28),
+        0 5px 15px rgba(70, 7, 37, .16),
+        inset 0 1px 0 rgba(255,255,255,.9);
+
+      transform-origin: center bottom;
+
+      transition:
+        transform .7s cubic-bezier(.2,.8,.2,1),
+        opacity .5s ease,
+        filter .5s ease;
+
+      touch-action: none;
+
+      cursor: grab;
+
+      user-select: none;
+
+      will-change: transform;
+    }
+
+    .memory-card:active {
+      cursor: grabbing;
+    }
+
+    .memory-card::after {
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      border-radius: 25px;
+
+      pointer-events: none;
+
+      box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.8),
+        inset 0 -25px 50px rgba(180, 40, 91, .05);
+    }
+
+    .memory-card img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      border-radius: 17px;
+
+      background: #eee;
+
+      box-shadow:
+        inset 0 0 0 1px rgba(0,0,0,.04);
+
+      -webkit-user-drag: none;
+
+      user-select: none;
+    }
+
+
+    /* =========================================================
+       MEMORY INFO
+    ========================================================= */
+
+    .memory-info {
+      width: min(90vw, 500px);
+
+      margin-top: 34px;
+
+      padding: 25px 24px 28px;
+
+      text-align: center;
+
+      border:
+        1px solid rgba(255,255,255,.24);
+
+      border-radius: 26px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.2),
+          rgba(255,255,255,.07)
+        );
+
+      backdrop-filter: blur(22px);
+
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.3),
+        0 20px 50px rgba(75, 8, 40, .14);
+    }
+
+    .memory-counter {
+      color: rgba(255,255,255,.7);
+
+      font-size: 9px;
+      font-weight: 800;
+
+      letter-spacing: 3px;
+    }
+
+    .memory-title {
+      margin-top: 8px;
+
+      color: #fff;
+
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .memory-text {
+      margin-top: 13px;
+
+      color: rgba(255,255,255,.9);
+
+      font-size: 13px;
+      font-weight: 500;
+
+      line-height: 2;
+    }
+
+    .swipe-hint {
+      margin-top: 25px;
+
+      color: rgba(255,255,255,.65);
+
+      font-size: 8px;
+      font-weight: 800;
+
+      letter-spacing: 3px;
+    }
+
+
+    /* =========================================================
+       STORY CONTINUES
+    ========================================================= */
+
+    .story-continues {
+      min-height: 100svh;
+
+      padding: 100px 24px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+    }
+
+    .story-continues-inner {
+      width: 100%;
+      max-width: 600px;
+
+      padding: 38px 25px 45px;
+
+      border:
+        1px solid rgba(255,255,255,.24);
+
+      border-radius: 35px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.18),
+          rgba(255,255,255,.07)
+        );
+
+      backdrop-filter: blur(25px);
+
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.32),
+        0 30px 70px rgba(78, 8, 40, .17);
+    }
+
+    .story-small {
+      color: rgba(255,255,255,.72);
+
+      font-size: 9px;
+      font-weight: 800;
+
+      letter-spacing: 4px;
+    }
+
+    .story-title {
+      margin-top: 14px;
+
+      color: #fff;
+
+      font-family: "DM Serif Display", serif;
+
+      font-size: clamp(40px, 10vw, 72px);
+
+      line-height: 1;
+
+      text-shadow:
+        0 14px 35px rgba(77, 7, 39, .28);
+    }
+
+    .story-photo-wrap {
+      position: relative;
+
+      width: min(76vw, 330px);
+
+      margin: 38px auto 0;
+
+      padding: 10px;
+
+      border-radius: 25px;
+
+      background: #fff;
+
+      box-shadow:
+        0 30px 70px rgba(65, 7, 36, .28),
+        0 4px 12px rgba(65, 7, 36, .12);
+
+      transform: rotate(-2deg);
+    }
+
+    .story-photo-wrap::before {
+      content: "";
+
+      position: absolute;
+
+      width: 80px;
+      height: 24px;
+
+      top: -10px;
+      left: 50%;
+
+      transform: translateX(-50%) rotate(-2deg);
+
+      background:
+        rgba(255,255,255,.65);
+
+      box-shadow:
+        0 5px 15px rgba(60,0,30,.08);
+
+      backdrop-filter: blur(5px);
+    }
+
+    .story-photo {
+      width: 100%;
+
+      border-radius: 16px;
+
+      object-fit: cover;
+    }
+
+    .story-message {
+      margin-top: 38px;
+
+      color: rgba(255,255,255,.92);
+
+      font-size: 15px;
+      font-weight: 600;
+
+      line-height: 2.1;
+    }
+
+    .story-heart {
+      margin-top: 24px;
+
+      color: #fff;
+
+      font-size: 34px;
+
+      text-shadow:
+        0 8px 25px rgba(87, 6, 41, .25);
+
+      animation: heartBeat 1.6s infinite;
+    }
+
+    @keyframes heartBeat {
+      0%,100% {
+        transform: scale(1);
+      }
+
+      15% {
+        transform: scale(1.16);
+      }
+
+      30% {
+        transform: scale(1);
+      }
+    }
+
+
+    /* =========================================================
+       TRANSITION
+    ========================================================= */
+
+    .transition-section {
+      min-height: 70svh;
+
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 80px 25px;
+
+      text-align: center;
+    }
+
+    .transition-section h2 {
+      max-width: 650px;
+
+      color: #fff;
+
+      font-family: "DM Serif Display", serif;
+
+      font-size: clamp(42px, 11vw, 78px);
+
+      line-height: 1;
+
+      text-shadow:
+        0 16px 40px rgba(74, 5, 37, .28);
+    }
+
+    .transition-section p {
+      margin-top: 20px;
+
+      color: rgba(255,255,255,.82);
+
+      font-size: 13px;
+    }
+
+
+    /* =========================================================
+       FINAL SURPRISE
+    ========================================================= */
+
+    .final-surprise {
+      min-height: 100svh;
+
+      padding:
+        100px 20px
+        80px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+
+      overflow: hidden;
+    }
+
+    .final-surprise > h2 {
+      color: #fff;
+
+      font-family: "DM Serif Display", serif;
+
+      font-size: clamp(42px, 11vw, 75px);
+
+      line-height: 1;
+
+      text-shadow:
+        0 16px 40px rgba(75, 5, 38, .28);
+    }
+
+    .final-surprise > p {
+      max-width: 430px;
+
+      margin-top: 18px;
+
+      color: rgba(255,255,255,.85);
+
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+
+    /* =========================================================
+       ENVELOPE
+    ========================================================= */
+
+    .envelope-area {
+      position: relative;
+
+      width: min(90vw, 430px);
+
+      height: 430px;
+
+      margin-top: 55px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .envelope {
+      position: relative;
+
+      width: min(82vw, 350px);
+      height: 230px;
+
+      cursor: pointer;
+
+      perspective: 1000px;
+
+      filter:
+        drop-shadow(0 35px 40px rgba(77, 5, 37, .25));
+
+      transition:
+        transform .5s ease;
+    }
+
+    .envelope:hover {
+      transform: translateY(-7px) rotateX(2deg);
+    }
+
+    .env-body {
+      position: absolute;
+      inset: 0;
+
+      z-index: 3;
+
+      overflow: hidden;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff,
+          #ffeef5 65%,
+          #ffd6e5
+        );
+
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.9);
+    }
+
+    .env-body::before {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      height: 100%;
+
+      clip-path: polygon(
+        0 0,
+        50% 52%,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffe3ee,
+          #ffc9dc
+        );
+    }
+
+    .flap {
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      z-index: 5;
+
+      transform-origin: top center;
+
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        50% 55%
+      );
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff,
+          #ffe5ef
+        );
+
+      filter:
+        drop-shadow(0 4px 5px rgba(100,10,50,.08));
+
+      transition:
+        transform 1s cubic-bezier(.2,.8,.2,1);
+    }
+
+    .seal {
+      position: absolute;
+
+      left: 50%;
+      top: 51%;
+
+      z-index: 8;
+
+      width: 45px;
+      height: 45px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transform:
+        translate(-50%, -50%);
+
+      border-radius: 50%;
+
+      color: white;
+
+      font-size: 18px;
+
+      background:
+        radial-gradient(
+          circle at 30% 25%,
+          #ffb4ce,
+          #df3978 60%,
+          #b71958
+        );
+
+      box-shadow:
+        0 8px 18px rgba(92, 8, 43, .2),
+        inset 0 2px 3px rgba(255,255,255,.3);
+
+      transition:
+        opacity .4s ease,
+        transform .5s ease;
+    }
+
+    .click-label {
+      position: absolute;
+
+      left: 50%;
+      bottom: -50px;
+
+      transform: translateX(-50%);
+
+      color: rgba(255,255,255,.8);
+
+      font-size: 9px;
+      font-weight: 800;
+
+      letter-spacing: 3px;
+
+      white-space: nowrap;
+
+      animation:
+        clickPulse 1.8s infinite;
+    }
+
+    @keyframes clickPulse {
+      0%,100% {
+        opacity: .5;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-4px);
+      }
+    }
+
+
+    /* =========================================================
+       LETTER
+    ========================================================= */
+
+    .letter {
+      position: absolute;
+
+      left: 5%;
+      width: 90%;
+
+      bottom: 10px;
+
+      z-index: 2;
+
+      height: 355px;
+
+      padding: 30px 22px;
+
+      overflow-y: auto;
+
+      color: #542035;
+
+      text-align: right;
+
+      border-radius: 8px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #fffdfd,
+          #fff7fa
+        );
+
+      box-shadow:
+        0 18px 45px rgba(83, 7, 41, .2);
+
+      transform:
+        translateY(0)
+        scale(.96);
+
+      opacity: 0;
+
+      pointer-events: none;
+
+      transition:
+        transform 1s cubic-bezier(.2,.8,.2,1),
+        opacity .5s ease;
+
+      scrollbar-width: thin;
+      scrollbar-color: #e95b91 transparent;
+    }
+
+    .letter h3 {
+      margin-bottom: 20px;
+
+      color: #c52f69;
+
+      font-family: "DM Serif Display", serif;
+
+      font-size: 27px;
+
+      line-height: 1.2;
+    }
+
+    .letter p {
+      color: #654052;
+
+      font-size: 12px;
+
+      line-height: 2.15;
+
+      white-space: pre-line;
+    }
+
+    .letter .signature {
+      margin-top: 25px;
+
+      color: #c52f69;
+
+      font-family: "DM Serif Display", serif;
+
+      font-size: 22px;
+
+      text-align: center;
+    }
+
+
+    /* OPEN ENVELOPE */
+
+    .envelope.open .flap {
+      transform: rotateX(180deg);
+    }
+
+    .envelope.open .seal {
+      opacity: 0;
+
+      transform:
+        translate(-50%, -50%)
+        scale(.6);
+    }
+
+    .envelope.open .letter {
+      z-index: 7;
+
+      transform:
+        translateY(-145px)
+        scale(1);
+
+      opacity: 1;
+
+      pointer-events: auto;
+    }
+
+    .envelope.open .click-label {
+      opacity: 0;
+    }
+
+
+    /* =========================================================
+       RESTART / CONTINUE
+    ========================================================= */
+
+    .restart-area {
+      position: relative;
+
+      width: min(90vw, 520px);
+
+      margin-top: 80px;
+
+      padding-bottom: 100px;
+
+      text-align: center;
+    }
+
+    .restart-question {
+      color: #fff;
+
+      font-size: 16px;
+      font-weight: 700;
+
+      line-height: 1.8;
+
+      text-shadow:
+        0 8px 25px rgba(76, 6, 39, .22);
+    }
+
+    .restart-button {
+      position: relative;
+
+      margin-top: 20px;
+
+      min-width: 180px;
+
+      padding: 15px 28px;
+
+      border: 0;
+
+      border-radius: 999px;
+
+      color: #c52f69;
+
+      background: #fff;
+
+      font-size: 13px;
+      font-weight: 800;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 15px 35px rgba(75, 5, 37, .18),
+        inset 0 1px 0 rgba(255,255,255,.9);
+
+      transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+    }
+
+    .restart-button:hover {
+      transform: translateY(-4px) scale(1.02);
+
+      box-shadow:
+        0 20px 45px rgba(75, 5, 37, .25);
+    }
+
+    .restart-button:active {
+      transform: scale(.95);
+    }
+
+
+    /* =========================================================
+       PASSWORD
+       التعديل الجديد فقط
+    ========================================================= */
+
+    .secret-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 100%;
+    }
+
+    .password-panel {
+      display: none;
+
+      width: min(90vw, 390px);
+
+      margin-top: 18px;
+
+      padding: 22px 20px 24px;
+
+      text-align: center;
+
+      border:
+        1px solid rgba(255,255,255,.24);
+
+      border-radius: 26px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.20),
+          rgba(255,255,255,.07)
+        );
+
+      backdrop-filter: blur(22px);
+
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.30),
+        0 20px 50px rgba(75,8,40,.14);
+
+      animation: panelIn .45s ease;
+    }
+
+    .password-panel.show {
+      display: block;
+    }
+
+    .password-panel h3 {
+      margin-bottom: 14px;
+
+      color: #fff;
+
+      font-size: 17px;
+    }
+
+    .password-input {
+      width: 100%;
+
+      padding: 13px 15px;
+
+      border:
+        1px solid rgba(197,47,105,.15);
+
+      border-radius: 14px;
+
+      outline: none;
+
+      color: #542035;
+
+      background:
+        rgba(255,255,255,.94);
+
+      font-family: inherit;
+
+      font-size: 15px;
+
+      text-align: center;
+    }
+
+    .password-input:focus {
+      box-shadow:
+        0 0 0 4px rgba(255,255,255,.14);
+    }
+
+    .hint {
+      margin:
+        11px 0 14px;
+
+      color:
+        rgba(255,255,255,.78);
+
+      font-size: 11px;
+
+      line-height: 1.8;
+    }
+
+    .unlock-btn {
+      border: 0;
+
+      padding: 11px 24px;
+
+      border-radius: 999px;
+
+      color: #fff;
+
+      background:
+        linear-gradient(
+          135deg,
+          #e74682,
+          #b91f5b
+        );
+
+      font-family: inherit;
+
+      font-size: 13px;
+      font-weight: 800;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 10px 25px rgba(105,7,49,.20);
+
+      transition:
+        transform .25s ease;
+    }
+
+    .unlock-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .wrong-message {
+      display: none;
+
+      margin-top: 12px;
+
+      color: #fff;
+
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .wrong-message.show {
+      display: block;
+
+      animation:
+        shake .4s ease;
+    }
+
+    @keyframes panelIn {
+      from {
+        opacity: 0;
+        transform:
+          translateY(12px)
+          scale(.96);
+      }
+
+      to {
+        opacity: 1;
+        transform:
+          translateY(0)
+          scale(1);
+      }
+    }
+
+    @keyframes shake {
+      0%,100% {
+        transform: translateX(0);
+      }
+
+      25% {
+        transform: translateX(-7px);
+      }
+
+      75% {
+        transform: translateX(7px);
+      }
+    }
+
+
+    /* =========================================================
+       EXPLOSION
+    ========================================================= */
+
+    .ring-explosion {
+      position: absolute;
+
+      left: 50%;
+      top: 58px;
+
+      width: 180px;
+      height: 180px;
+
+      transform:
+        translate(-50%, -50%)
+        scale(0);
+
+      opacity: 0;
+
+      pointer-events: none;
+    }
+
+    .ring-explosion.active {
+      animation:
+        explosionAppear 1s cubic-bezier(.2,.8,.2,1) forwards;
+    }
+
+    .ring {
+      position: absolute;
+
+      left: 50%;
+      top: 50%;
+
+      width: 75px;
+      height: 75px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transform:
+        translate(-50%, -50%)
+        scale(.3);
+
+      border-radius: 50%;
+
+      color: #fff;
+
+      font-size: 30px;
+
+      background:
+        radial-gradient(
+          circle at 30% 20%,
+          #ffd5e3,
+          #ef6e9d 45%,
+          #c72b69
+        );
+
+      box-shadow:
+        0 0 0 8px rgba(255,255,255,.15),
+        0 15px 35px rgba(87, 7, 42, .25);
+    }
+
+    .ring-explosion.active .ring {
+      animation:
+        ringPop 1.05s cubic-bezier(.2,.8,.2,1) forwards;
+    }
+
+    .explosion-particle {
+      position: absolute;
+
+      left: 50%;
+      top: 50%;
+
+      width: 7px;
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: #fff;
+
+      box-shadow:
+        0 0 12px rgba(255,255,255,.9);
+    }
+
+    .explosion-particle:nth-child(1) {
+      --x: -75px;
+      --y: -55px;
+    }
+
+    .explosion-particle:nth-child(2) {
+      --x: 72px;
+      --y: -58px;
+    }
+
+    .explosion-particle:nth-child(3) {
+      --x: -82px;
+      --y: 20px;
+    }
+
+    .explosion-particle:nth-child(4) {
+      --x: 82px;
+      --y: 24px;
+    }
+
+    .explosion-particle:nth-child(5) {
+      --x: -50px;
+      --y: 75px;
+    }
+
+    .explosion-particle:nth-child(6) {
+      --x: 50px;
+      --y: 72px;
+    }
+
+    .explosion-particle:nth-child(7) {
+      --x: 0;
+      --y: -88px;
+    }
+
+    .explosion-particle:nth-child(8) {
+      --x: 0;
+      --y: 90px;
+    }
+
+    .ring-explosion.active .explosion-particle {
+      animation:
+        particleFly .85s cubic-bezier(.2,.8,.2,1) forwards;
+    }
+
+    @keyframes explosionAppear {
+      0% {
+        opacity: 1;
+        transform:
+          translate(-50%, -50%)
+          scale(.2);
+      }
+
+      100% {
+        opacity: 1;
+        transform:
+          translate(-50%, -50%)
+          scale(1);
+      }
+    }
+
+    @keyframes ringPop {
+      0% {
+        transform:
+          translate(-50%, -50%)
+          scale(.2)
+          rotate(-25deg);
+
+        opacity: 0;
+      }
+
+      45% {
+        transform:
+          translate(-50%, -50%)
+          scale(1.18)
+          rotate(8deg);
+
+        opacity: 1;
+      }
+
+      100% {
+        transform:
+          translate(-50%, -50%)
+          scale(1)
+          rotate(0);
+
+        opacity: 1;
+      }
+    }
+
+    @keyframes particleFly {
+      from {
+        transform:
+          translate(-50%, -50%)
+          scale(.2);
+        opacity: 0;
+      }
+
+      to {
+        transform:
+          translate(
+            calc(-50% + var(--x)),
+            calc(-50% + var(--y))
+          )
+          scale(1);
+
+        opacity: 1;
+      }
+    }
+
+    .continue-message {
+      margin-top: 20px;
+
+      color: #fff;
+
+      font-family: "DM Serif Display", serif;
+
+      font-size: 38px;
+
+      opacity: 0;
+
+      transform:
+        translateY(15px)
+        scale(.9);
+
+      transition:
+        opacity .7s ease,
+        transform .7s cubic-bezier(.2,.8,.2,1);
+
+      text-shadow:
+        0 12px 30px rgba(73, 5, 37, .28);
+    }
+
+    .continue-message.show {
+      opacity: 1;
+
+      transform:
+        translateY(0)
+        scale(1);
+    }
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width: 600px) {
+
+      .memory-stage {
+        width: 88vw;
+        height: 108vw;
+        max-height: 480px;
+      }
+
+      .memory-card {
+        padding: 9px;
+        border-radius: 22px;
+      }
+
+      .memory-card img {
+        border-radius: 15px;
+      }
+
+      .memory-info {
+        padding: 22px 18px 25px;
+      }
+
+      .letter {
+        height: 340px;
+
+        padding:
+          27px 18px;
+      }
+
+      .envelope-area {
+        height: 410px;
+      }
+
+      .envelope.open .letter {
+        transform:
+          translateY(-135px)
+          scale(1);
+      }
+    }
+
+
+    /* =========================================================
+       LARGE SCREENS
+    ========================================================= */
+
+    @media (min-width: 800px) {
+
+      .memories {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .memory-stage {
+        width: 390px;
+        height: 500px;
+      }
+
+      .story-continues-inner {
+        padding: 55px;
+      }
+    }
+
+
+    /* =========================================================
+       REDUCED MOTION
+    ========================================================= */
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+
+    }
+
+  </style>
+  
+</head>
+
+<body>
+
+      <!-- =======================================================
+       INTRO
+  ======================================================== -->
+
+  <div class="intro" id="intro">
+
+    <div class="intro-glow"></div>
+
+    <div class="intro-content">
+
+      <div class="rocket">🚀</div>
+
+      <div class="flame"></div>
+
+      <div class="intro-caption">
+        SOMETHING SPECIAL IS COMING
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =======================================================
+       HERO
+  ======================================================== -->
+
+  <main>
+
+    <section class="hero" id="hero">
+
+      <div class="eyebrow">
+        TODAY IS YOUR DAY
+      </div>
+
+      <h1 class="serif">
+        Happy Birthday
+      </h1>
+
+      <div class="name serif">
+        ME700000 ❤️
+      </div>
+
+      <p>
+        A little story made especially for you.
+      </p>
+
+      <div class="scroll-hint">
+        SCROLL TO BEGIN ↓
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CHAPTER
+    ====================================================== -->
+
+    <section class="chapter">
+
+      <div class="big-number">
+        22
+      </div>
+
+      <h2>
+        The loveliest gazelle turns 22. 🦌♥️
+      </h2>
+
+      <p>
+        And somehow, this number looks really good on you.
+      </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         MEMORIES
+    ====================================================== -->
+
+    <section class="memories">
+
+      <div class="memories-head">
+
+        <div class="section-label">
+          A LITTLE JOURNEY
+        </div>
+
+        <h2>
+          Some moments deserve to stay.
+        </h2>
+
+        <p>
+          بس اسحبي الكارت اللي فوق… والباقي هيحكي لوحده.
+        </p>
+
+      </div>
+
+
+      <div
+        class="memory-stage"
+        id="memoryStage"
+      >
+
+        <div class="memory-card">
+          <img
+            src="images/1.png"
+            alt="Memory 1"
+            draggable="false"
+          >
+        </div>
+
+        <div class="memory-card">
+          <img
+            src="images/2.png"
+            alt="Memory 2"
+            draggable="false"
+          >
+        </div>
+
+        <div class="memory-card">
+          <img
+            src="images/3.png"
+            alt="Memory 3"
+            draggable="false"
+          >
+        </div>
+
+        <div class="memory-card">
+          <img
+            src="images/4.png"
+            alt="Memory 4"
+            draggable="false"
+          >
+        </div>
+
+        <div class="memory-card">
+          <img
+            src="images/5.png"
+            alt="Memory 5"
+            draggable="false"
+          >
+        </div>
+
+        <div class="memory-card">
+          <img
+            src="images/6.png"
+            alt="Memory 6"
+            draggable="false"
+          >
+        </div>
+
+        <div class="memory-card">
+          <img
+            src="images/7.png"
+            alt="Memory 7"
+            draggable="false"
+          >
+        </div>
+
+        <div class="memory-card">
+          <img
+            src="images/8.png"
+            alt="Memory 8"
+            draggable="false"
+          >
+        </div>
+
+        <div class="memory-card">
+          <img
+            src="images/9.png"
+            alt="Memory 9"
+            draggable="false"
+          >
+        </div>
+
+        <div class="memory-card">
+          <img
+            src="images/10.png"
+            alt="Memory 10"
+            draggable="false"
+          >
+        </div>
+
+        <div class="memory-card">
+          <img
+            src="images/11.png"
+            alt="Memory 11"
+            draggable="false"
+          >
+        </div>
+
+      </div>
+
+
+      <div class="memory-info">
+
+        <div
+          class="memory-counter"
+          id="memoryCounter"
+        >
+          01 / 11
+        </div>
+
+        <div
+          class="memory-title"
+          id="memoryTitle"
+        >
+          أول صورة ❤️
+        </div>
+
+        <div
+          class="memory-text"
+          id="memoryText"
+        >
+          ديما جميله و حلوه و كل مره بشووفك فيها بحبك اكتر و ببقا مبهور بيكى اكتر
+        </div>
+
+      </div>
+
+
+      <div class="swipe-hint">
+        ← SWIPE THE CARD →
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         STORY CONTINUES
+    ====================================================== -->
+
+    <section class="story-continues">
+
+      <div class="story-continues-inner">
+
+        <div class="story-small">
+          LAST MEMORY ❤️
+        </div>
+
+        <h2 class="story-title">
+          بس القصة لسه مخلصتش
+        </h2>
+
+        <div class="story-photo-wrap">
+
+          <img
+            src="images/12.png"
+            alt="Memory"
+            class="story-photo"
+            draggable="false"
+          >
+
+        </div>
+
+        <p class="story-message">
+
+          انا جنبك و معاكى و فضهرك يا ميحووو
+
+          <br>
+
+          و هفضل مكمل بس عشان قصتنا متخلصش
+
+        </p>
+
+        <div class="story-heart">
+          ♥
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TRANSITION
+    ====================================================== -->
+
+    <section class="transition-section">
+
+      <div class="section-label">
+        ONE LAST THING
+      </div>
+
+      <h2>
+        But the story isn't over yet...
+      </h2>
+
+      <p>
+        في حاجة أخيرة مستخبية مستنياكي.
+      </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         FINAL SURPRISE
+    ====================================================== -->
+
+    <section class="final-surprise">
+
+      <div class="section-label">
+        ONE LAST LITTLE SURPRISE
+      </div>
+
+      <h2>
+        There's something waiting for you.
+      </h2>
+
+      <p>
+        افتحيها براحتك… بس متقوليش إني محنتش 😂🥹
+      </p>
+
+
+      <!-- ===================================================
+           ENVELOPE
+      ==================================================== -->
+
+      <div class="envelope-area">
+
+        <div
+          class="envelope"
+          id="envelope"
+        >
+
+          <div class="letter">
+
+            <h3>
+              يميحوو ❤️
+            </h3>
+
+            <p>
+هى المفروض دى رساله بتظهر مكتوب فيها رومانسيه بقا و مش عارف ايه و محن و كهن و انا بصراحه بتموحن عادى لو معاكى🥹😂😂
+
+بصى انتى حببتى يميحوو هقولك كلميتن احنا عدينا بحجات كتير اوى سوا و معظمها وحشه بس عدينها سوا و بينى و بينك علاقتنا دى مستحيله بس احنا خلينها تنفع عشان رمينا كل حاجه ورا ضهرنا اه الحجات دى سعات بتوجعنا بس و احنا مع بعض هنهون على بعض و هنكمل سوا عشان بنحب بعض و هنظزز كل و اى حاجه زعلاتنا او شيلتنا يوم من بعض عشان خلاص بقا عرفنا ان ولا انا هعرف اكمل من غير ولا انتى
+
+المهم يميحو انتى عملتينى حجات كتير اوى اولهم الصبر 😂😂😂 اقسم بالله انا لو ابنى عمل فيا الى انتى عملتيه دا كنت حدفتو من البلكونه بس انا مقدرش اعمل كده معاكى مع انك مطلعه ميتين اهلى و مزعلانى ديما ً و عيله عايزه ضرب الجزم و التربيه من الاول بس انا بحبك و بجد مش عايز اشوفك غير مبسوطه و فرحانه بس
+
+بحبك يا احلى ميييحوو 🥹
+كل سنه و انت طيب يغزااال♥️🦌
+و عايزين نرجع امجاد الماضى بقا🫦
+            </p>
+
+            <div class="signature">
+              ♥️🦌
+            </div>
+
+          </div>
+
+
+          <div class="env-body"></div>
+
+          <div class="flap"></div>
+
+          <div class="seal">
+            ♥
+          </div>
+
+          <div class="click-label">
+            CLICK HERE ✨
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           RESTART
+      ==================================================== -->
+
+      <div
+        class="restart-area"
+        id="restartArea"
+      >
+
+        <div class="restart-question">
+          عايزة تعيشيها تاني و تكملي؟ 🥹❤️
+        </div>
+
+
+        <div class="secret-box">
+
+          <button
+            type="button"
+            class="restart-button"
+            id="secretButton"
+          >
+            دوسي هنا ✨
+          </button>
+
+
+          <div
+            class="password-panel"
+            id="passwordPanel"
+          >
+
+            <h3>
+              🔐 لحظة واحدة...
+            </h3>
+
+            <input
+              type="password"
+              id="secretPassword"
+              class="password-input"
+              placeholder="اكتبي كلمة السر"
+              autocomplete="off"
+            >
+
+            <div class="hint">
+              كلمه كنا متفقين نقولها لما نحب نخلع انا و انتى لوحدنا بعيد عن اى حد
+            </div>
+
+            <button
+              type="button"
+              class="unlock-btn"
+              id="unlockButton"
+            >
+              تأكيد ❤️
+            </button>
+
+            <div
+              class="wrong-message"
+              id="wrongMessage"
+            >
+              أخص عليكي مش فاكرة كلمتنا؟ 😂❤️
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="ring-explosion"
+          id="ringExplosion"
+        >
+
+          <span class="explosion-particle"></span>
+          <span class="explosion-particle"></span>
+          <span class="explosion-particle"></span>
+          <span class="explosion-particle"></span>
+          <span class="explosion-particle"></span>
+          <span class="explosion-particle"></span>
+          <span class="explosion-particle"></span>
+          <span class="explosion-particle"></span>
+
+          <div class="ring">
+            💍
+          </div>
+
+        </div>
+
+
+        <div
+          class="continue-message"
+          id="continueMessage"
+        >
+          هنكمل. ❤️
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =======================================================
+       JAVASCRIPT
+  ======================================================== -->
+
+  <script>
+
+    /* =========================================================
+       INTRO
+    ========================================================= */
+
+    const intro = document.getElementById("intro");
+
+    setTimeout(() => {
+
+      if (intro) {
+        intro.classList.add("hide");
+      }
+
+    }, 3300);
+
+
+    /* =========================================================
+       MEMORY DATA
+    ========================================================= */
+
+    const memories = [
+
+      {
+        title: "أول صورة ❤️",
+        text:
+          "ديما جميله و حلوه و كل مره بشووفك فيها بحبك اكتر و ببقا مبهور بيكى اكتر"
+      },
+
+      {
+        title: "أول مرة نتقفش 😂",
+        text:
+          "اول مره نتقفش سوااا بس كنا مبسوطيين اننا سوااا"
+      },
+
+      {
+        title: "الصحرااا 😂",
+        text:
+          "مطلعهه ميتييين اهلى بس بمووت فيكى العربيه كانت عطلانه و الهنام قاعده بتتصور و احنا مزنوقين فالصحرااا"
+      },
+
+      {
+        title: "هنا مش محتاج اتكلم 🫦",
+        text:
+          "هنا مش محتاج اتكلم بس كنتى حته🫦"
+      },
+
+      {
+        title: "اليوم الى عمروو ما يتنسي ❤️",
+        text:
+          "اليوم الى عمروو ما يتنسي داااه احلى يوم عدى عليا فحياتى عشان بس كنت حاسس انى جنبك بجد و كنت حاسك هربانه من الدنيا كلها و جايه لحضنى انا"
+      },
+
+      {
+        title: "السيد راامبووو 😂",
+        text:
+          "السيد راامبووو"
+      },
+
+      {
+        title: "أجمل هدية ❤️",
+        text:
+          "اجمل و احلى و اغلى هديه جاتلى فحياتى بعد دبوس امك طبعا و اتمنى تكونى فهمتى ليه انا كنت بقعد تحت بيتك بالساعات عشان لحظه زى دى بالدنيا عندى"
+      },
+
+      {
+        title: "الدكتور 😂",
+        text:
+          "كنا متخانقين و غصب عنك طلعت معاكى للدكتورر و عجبنى البتاع الفرو بتاع تيته دااا"
+      },
+
+      {
+        title: "عبث كتيييير 😂",
+        text:
+          "لا و فى عبث من دا كتيييير"
+      },
+
+      {
+        title: "من ساعه ما عرفتك 😂",
+        text:
+          "من ساعه ما عرفتك و انا باااائس"
+      },
+
+      {
+        title: "خلااص يا ست 😂",
+        text:
+          "خلااص يا ست عرفنا انك بتكرهيينى اوى"
+      }
+
+    ];
+
+
+    /* =========================================================
+       MEMORY ELEMENTS
+    ========================================================= */
+
+    const memoryStage =
+      document.getElementById("memoryStage");
+
+    const memoryCards =
+      Array.from(
+        document.querySelectorAll(".memory-card")
+      );
+
+    const memoryCounter =
+      document.getElementById("memoryCounter");
+
+    const memoryTitle =
+      document.getElementById("memoryTitle");
+
+    const memoryText =
+      document.getElementById("memoryText");
+
+    let currentMemory = 0;
+
+    let isAnimating = false;
+
+
+    /* =========================================================
+       CARD STACK
+    ========================================================= */
+
+    function updateCardStack() {
+
+      memoryCards.forEach((card, index) => {
+
+        let relative =
+          (index - currentMemory + memoryCards.length)
+          % memoryCards.length;
+
+        if (relative > 5) {
+          relative -= memoryCards.length;
+        }
+
+        if (relative < 0) {
+
+          card.style.opacity = "0";
+
+          card.style.pointerEvents = "none";
+
+          card.style.zIndex = "0";
+
+          return;
+        }
+
+
+        card.style.opacity = "1";
+
+        card.style.pointerEvents =
+          relative === 0
+            ? "auto"
+            : "none";
+
+        card.style.zIndex =
+          String(50 - relative);
+
+
+        const rotation =
+          relative === 0
+            ? 0
+            : relative % 2 === 0
+              ? 2.5
+              : -2.5;
+
+        const translateY =
+          relative * 9;
+
+        const scale =
+          1 - relative * .035;
+
+        card.style.transform =
+          `
+            translateY(${translateY}px)
+            scale(${scale})
+            rotate(${rotation}deg)
+          `;
+
+        card.style.filter =
+          relative === 0
+            ? "none"
+            : `brightness(${1 - relative * .035})`;
+
+      });
+
+
+      const memory =
+        memories[currentMemory];
+
+      if (memory) {
+
+        memoryCounter.textContent =
+          `${String(currentMemory + 1).padStart(2, "0")} / ${memories.length}`;
+
+        memoryTitle.textContent =
+          memory.title;
+
+        memoryText.textContent =
+          memory.text;
+      }
+
+    }
+
+
+    updateCardStack();
+
+
+    /* =========================================================
+       SWIPE
+    ========================================================= */
+
+    let startX = 0;
+    let startY = 0;
+
+    let currentX = 0;
+
+    let dragging = false;
+
+
+    function getActiveCard() {
+      return memoryCards[currentMemory];
+    }
+
+
+    memoryStage.addEventListener(
+      "pointerdown",
+      (event) => {
+
+        if (isAnimating) return;
+
+        const card = getActiveCard();
+
+        if (!card) return;
+
+        dragging = true;
+
+        startX = event.clientX;
+        startY = event.clientY;
+
+        currentX = 0;
+
+        card.setPointerCapture(
+          event.pointerId
+        );
+
+      }
+    );
+
+
+    memoryStage.addEventListener(
+      "pointermove",
+      (event) => {
+
+        if (!dragging || isAnimating) {
+          return;
+        }
+
+        const card = getActiveCard();
+
+        if (!card) return;
+
+        currentX =
+          event.clientX - startX;
+
+        const rotation =
+          currentX * .045;
+
+        const lift =
+          Math.min(
+            Math.abs(currentX) * .025,
+            18
+          );
+
+        card.style.transform =
+          `
+            translate(
+              ${currentX}px,
+              ${-lift}px
+            )
+            rotate(${rotation}deg)
+            scale(1.01)
+          `;
+
+      }
+    );
+
+
+    memoryStage.addEventListener(
+      "pointerup",
+      finishSwipe
+    );
+
+    memoryStage.addEventListener(
+      "pointercancel",
+      finishSwipe
+    );
+
+
+    function finishSwipe() {
+
+      if (!dragging) return;
+
+      dragging = false;
+
+      const card = getActiveCard();
+
+      if (!card) return;
+
+
+      const threshold = 90;
+
+
+      if (Math.abs(currentX) < threshold) {
+
+        card.style.transform =
+          "translateY(0) scale(1) rotate(0deg)";
+
+        return;
+      }
+
+
+      isAnimating = true;
+
+
+      const direction =
+        currentX > 0
+          ? 1
+          : -1;
+
+
+      card.style.transition =
+        "transform .65s cubic-bezier(.2,.8,.2,1), opacity .55s ease";
+
+
+      card.style.transform =
+        `
+          translate(
+            ${direction * 120}vw,
+            -10vh
+          )
+          rotate(${direction * 35}deg)
+          scale(.9)
+        `;
+
+      card.style.opacity = "0";
+
+
+      setTimeout(() => {
+
+        currentMemory++;
+
+        if (
+          currentMemory >= memoryCards.length
+        ) {
+
+          currentMemory = 0;
+
+          updateCardStack();
+
+          isAnimating = false;
+
+          return;
+        }
+
+
+        card.style.transition =
+          "";
+
+        card.style.opacity =
+          "1";
+
+        updateCardStack();
+
+        isAnimating = false;
+
+
+        if (
+          currentMemory === memoryCards.length - 1
+        ) {
+
+          setTimeout(() => {
+
+            const story =
+              document.querySelector(
+                ".story-continues"
+              );
+
+            if (story) {
+
+              story.scrollIntoView({
+                behavior: "smooth"
+              });
+
+            }
+
+          }, 500);
+
+        }
+
+      }, 650);
+
+    }
+
+
+    /* =========================================================
+       PREVENT IMAGE DRAG
+    ========================================================= */
+
+    document
+      .querySelectorAll("img")
+      .forEach((img) => {
+
+        img.addEventListener(
+          "dragstart",
+          (event) => {
+            event.preventDefault();
+          }
+        );
+
+      });
+
+
+    /* =========================================================
+       ENVELOPE
+    ========================================================= */
+
+    const envelope =
+      document.getElementById("envelope");
+
+    const restartArea =
+      document.getElementById("restartArea");
+
+    const secretButton =
+      document.getElementById("secretButton");
+
+    const passwordPanel =
+      document.getElementById("passwordPanel");
+
+    const secretPassword =
+      document.getElementById("secretPassword");
+
+    const unlockButton =
+      document.getElementById("unlockButton");
+
+    const wrongMessage =
+      document.getElementById("wrongMessage");
+
+    const ringExplosion =
+      document.getElementById("ringExplosion");
+
+    const continueMessage =
+      document.getElementById("continueMessage");
+
+
+    restartArea.style.opacity = "0";
+    restartArea.style.pointerEvents = "none";
+    restartArea.style.transform = "translateY(15px)";
+
+
+    envelope.addEventListener(
+      "click",
+      (event) => {
+
+        if (
+          envelope.classList.contains("open")
+        ) {
+
+          if (
+            event.target.closest(".letter")
+          ) {
+            return;
+          }
+
+          return;
+        }
+
+
+        envelope.classList.add("open");
+
+
+        setTimeout(() => {
+
+          restartArea.style.transition =
+            "opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1)";
+
+          restartArea.style.opacity = "1";
+
+          restartArea.style.pointerEvents =
+            "auto";
+
+          restartArea.style.transform =
+            "translateY(0)";
+
+        }, 1100);
+
+      }
+    );
+
+
+    /* =========================================================
+       SECRET PASSWORD
+    ========================================================= */
+
+    secretButton.addEventListener(
+      "click",
+      () => {
+
+        secretButton.style.transition =
+          "opacity .3s ease, transform .5s ease";
+
+        secretButton.style.opacity = "0";
+
+        secretButton.style.transform =
+          "scale(.7)";
+
+
+        setTimeout(() => {
+
+          secretButton.style.display =
+            "none";
+
+          passwordPanel.classList.add(
+            "show"
+          );
+
+
+          setTimeout(() => {
+
+            secretPassword.focus();
+
+          }, 200);
+
+        }, 280);
+
+      }
+    );
+
+
+    /* =========================================================
+       CHECK SECRET PASSWORD
+    ========================================================= */
+
+    function checkSecretPassword() {
+
+      const password =
+        secretPassword.value.trim();
+
+
+      wrongMessage.classList.remove(
+        "show"
+      );
+
+
+      if (
+        password === "وسكى"
+      ) {
+
+        passwordPanel.classList.remove(
+          "show"
+        );
+
+
+        ringExplosion.classList.remove(
+          "active"
+        );
+
+
+        void ringExplosion.offsetWidth;
+
+
+        ringExplosion.classList.add(
+          "active"
+        );
+
+
+        setTimeout(() => {
+
+          continueMessage.classList.add(
+            "show"
+          );
+
+        }, 800);
+
+      } else {
+
+        void wrongMessage.offsetWidth;
+
+        wrongMessage.classList.add(
+          "show"
+        );
+
+        secretPassword.select();
+
+      }
+
+    }
+
+
+    /* =========================================================
+       UNLOCK
+    ========================================================= */
+
+    unlockButton.addEventListener(
+      "click",
+      checkSecretPassword
+    );
+
+
+    /* =========================================================
+       ENTER KEY
+    ========================================================= */
+
+    secretPassword.addEventListener(
+      "keydown",
+      (event) => {
+
+        if (
+          event.key === "Enter"
+        ) {
+
+          checkSecretPassword();
+
+        }
+
+      }
+    );
+
+
+    /* =========================================================
+       SCROLL REVEAL
+    ========================================================= */
+
+    const revealElements =
+      document.querySelectorAll(
+        ".chapter, .memories-head, .memory-info, .story-continues-inner, .transition-section, .final-surprise"
+      );
+
+
+    revealElements.forEach(
+      (element) => {
+
+        element.style.opacity = "0";
+
+        element.style.transform =
+          "translateY(25px)";
+
+        element.style.transition =
+          "opacity .9s ease, transform .9s cubic-bezier(.2,.8,.2,1)";
+
+      }
+    );
+
+
+    const observer =
+      new IntersectionObserver(
+        (entries) => {
+
+          entries.forEach(
+            (entry) => {
+
+              if (
+                entry.isIntersecting
+              ) {
+
+                entry.target.style.opacity =
+                  "1";
+
+                entry.target.style.transform =
+                  "translateY(0)";
+
+                observer.unobserve(
+                  entry.target
+                );
+
+              }
+
+            }
+          );
+
+        },
+        {
+          threshold: .12
+        }
+      );
+
+
+    revealElements.forEach(
+      (element) => {
+
+        observer.observe(element);
+
+      }
+    );
+
+
+    /* =========================================================
+       INITIAL POSITION
+    ========================================================= */
+
+    window.addEventListener(
+      "load",
+      () => {
+
+        window.scrollTo(
+          0,
+          0
+        );
+
+      }
+    );
+
+
+    /* =========================================================
+       SUBTLE PARALLAX
+    ========================================================= */
+
+    let ticking = false;
+
+
+    window.addEventListener(
+      "scroll",
+      () => {
+
+        if (ticking) return;
+
+        window.requestAnimationFrame(
+          () => {
+
+            const scrollY =
+              window.scrollY;
+
+            const number =
+              document.querySelector(
+                ".big-number"
+              );
+
+            if (number) {
+
+              number.style.transform =
+                `
+                  translate(-50%, -50%)
+                  translateY(${scrollY * .045}px)
+                `;
+
+            }
+
+            ticking = false;
+
+          }
+        );
+
+        ticking = true;
+
+      },
+      {
+        passive: true
+      }
+    );
+
+  </script>
+
+</body>
+
+</html>
